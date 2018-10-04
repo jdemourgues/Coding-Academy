@@ -1,0 +1,8 @@
+<?php
+include_once("Warrior.php");
+include_once("Mage.php");
+
+$warrior = new Warrior("jean-luc");
+$mage = new Mage("Robert");
+$warrior->attack();
+$mage->attack();

@@ -1,0 +1,29 @@
+<?php
+include_once ("Animal.php");
+
+$isidore = new Animal("Isidore", 4, Animal::MAMMAL);
+$bernard = new Animal("Bernard", 4, Animal::MAMMAL);
+$gudule = new Animal("Gudule", 0, Animal::FISH);
+$andreas = new Animal("Andreas", 4, Animal::FISH);
+$pioupiou = new Animal("Pioupiou", 4, Animal::BIRD);
+$tonton = new Animal("Tonton", 4, Animal::BIRD);
+
+
+echo $isidore->getName()." has " .$isidore->getLegs()." legs and is a ".$isidore->getType().".\n";
+Animal::getNumberOfAnimalsAlive()."\n";
+Animal::getNumberOfMammals()."\n";
+Animal::getNumberOfFishes()."\n";
+Animal::getNumberOfBirds()."\n";
+
+unset($bernard);
+unset($isidore);
+unset($gudule);
+unset($andreas);
+unset($pioupiou);
+
+Animal::getNumberOfAnimalsAlive()."\n";
+Animal::getNumberOfMammals()."\n";
+Animal::getNumberOfFishes()."\n";
+Animal::getNumberOfBirds()."\n";
+
+?>

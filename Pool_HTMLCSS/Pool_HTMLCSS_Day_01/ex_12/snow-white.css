@@ -1,0 +1,26 @@
+.a-great-style {
+	background-color: red;
+	font-family: Impact;
+}
+
+body {
+	background-color: yellow;
+}
+
+.p1 {
+	font-size: 21;
+	background-color: black;
+	color: white;
+
+}
+
+.p2 {
+	font-size: 27;
+	background-color: white;
+	color: black;
+}
+
+.spec1 {
+	color : red;
+	font-style: italic;
+}

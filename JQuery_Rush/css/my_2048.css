@@ -1,0 +1,118 @@
+/*
+** EPITECH PROJECT, 2017
+** 2048
+** my_2048.css by Jerome de MOURGUES - 06.60.68.58.08
+* Created 11-22-2017 11:17
+**
+*/
+
+/** {background-image: url("/css/Plage_paradisiaque_254858875.jpg")
+}
+*/
+.caraibe{
+
+}
+
+.emptyCell{
+    background-color: transparent;
+    color: #FFFFFF;
+    border: solid;
+    border-color: white;
+}
+.title{
+    color: #000000;
+    font-size: 48px;
+    font-family: "Abyssinica SIL";
+    text-align: center;
+}
+
+.menu{
+    color: #000000;
+    font-size: 24px;
+    font-family: "Abyssinica SIL";
+    text-align: center;
+}
+
+.gameTable{
+    margin: auto;
+    border: solid 5px darkgrey;
+}
+
+.gameTable td {
+    width: 77px;
+    height: 77px;
+    font-family: "DejaVu Sans Mono";
+    font-size: 24px;
+    color: lightslategray;
+    text-align: center;
+    vertical-align: middle;
+    border: solid;
+    border-color: darkgray;
+}
+
+.score{
+    border: solid;
+    font-size: 18px;
+    font-family: "Abyssinica SIL";
+    text-align: center;
+    margin: auto;
+}
+
+.score td {
+    color: #EA0000;
+}
+
+.start{
+    margin: auto;
+    text-align: center;
+}
+
+.cmdButton{
+    width : 100px;
+    height: 67px;
+}
+
+.cell0 {
+    color: lightslategray;
+    background-color: lightslategray;
+}
+
+.cell2 {
+    background-color: #FFF8D7
+}
+
+.cell4 {
+    background-color: #FFED97
+}
+
+.cell8 {
+    background-color: #FFBB77
+}
+
+.cell16 {
+    background-color: #FF9224
+}
+
+.cell32 {
+    background-color: #FF5809
+}
+
+.cell64 {
+    background-color: #EA0000
+}
+
+.cell128 {
+    background-color: #FFFF37
+}
+
+.cell256 {
+    background-color: #F9F900
+}
+
+.cell512 {
+    background-color: #E1E100
+}
+
+>.cell1024 {
+    background-color: #C4C400
+}

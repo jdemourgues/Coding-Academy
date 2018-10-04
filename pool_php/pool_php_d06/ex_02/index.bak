@@ -1,0 +1,12 @@
+<?php
+
+include_once ("PlasmaRifle.php");
+include_once ("PowerFist.php");
+
+$plasma1 = new PlasmaRifle();
+$fist1 = new PowerFist();
+
+$plasma1->attack();
+$fist1->attack();
+
+?>

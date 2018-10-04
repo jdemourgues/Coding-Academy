@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="codingpedia.css">
+    <title>Welcome to CodingPedia</title>
+</head>
+
+<body>
+	<header>
+        <h1>Bienvenue sur CodingPedia</h1>
+    	<nav>
+	    	<ul>
+		    	<li><a href="index.html">Index</a></li>
+			    <li><a href="php.html">PHP</a></li>
+			    <li><a href="sql.html">SQL</a></li>
+		    </ul>
+	    </nav>
+    </header>
+	<main>
+		<section>
+  		<p>CodingPedia is a collective encyclopedia project on the Internet aiming to be universal and multi-lingual which functions
+as a wiki. CodingPedia has for goal to offer freely reusable objective and verifiable content that anyone can
+modify and improve</p>
+		<p>Ce site est trop bien, il va tout vous apprendre sur la Coding Academy</p>
+		<article>
+			<form method="post" action="traitement.php">
+				<div><label for="firstname">First name: </label><input type="text" name="firstname" id="firstname" required></div>
+				<div><label for="name">Last name:  </label><input type="text" name="lastname" id="name" required></div>
+				<div><label for="email">Email : </label><input type="email" name="email" id="email" required></div>
+				<div><label for="age">Age : </label><input type="number" min="3" max="99" name="age" id="age"></div>
+				<div><label for="tel">Tel : </label><input type="tel" maxlength="10" name="tel" id="tel"></div>
+				<div><label for="genre">Gender : </label><br>
+					<ul>
+						<li><input type="radio" name="genre" value="male" id="genre" class="genre"/>Male</li>
+						<li><input type="radio" name="genre" value="female" class="genre"/>female</li>
+						<li><input type="radio" name="genre" value="other" checked class="genre" />other</li>
+					</ul></div>
+				<div><label for="Hair">Hair color : </label><input type="color" name="Hair" id="Hair"></div>
+				<div><label for="date">Date : </label><input type="date" name="date" id="date" required></div>
+				<div><label for="Technology">Technology : </label>
+  					<select name = "Technology" id = "Technology">
+  						<option value ="html">Html</option>
+  						<option value ="php">Php</option>
+  						<option value ="sql">Sql</option>
+  					</select></div>
+				<div><label for="question">Question :</label><br><textarea name="question" id="question" rows="10" cols="50"></textarea></div>
+               <div><label for="submit"></label><input type="submit" value="Envoyer ma question"  id="submit"/></div>
+			</form>
+		</article>
+		<article>
+			<progress value="70" max="100">70 %</progress>
+		</article>
+		<article>
+			<ul>
+				<li>HTML et CSS</li>
+				<li>Javascript</li>
+				<li>Server side</li>
+				<li>Web building</li>
+			</ul>
+		</article>
+    </section>
+    </main>
+	<aside>
+	    Une courte description de moi et de ce que je fais à la coding academy
+    </aside>
+	<footer><br>'name' - 'first name' - 'address' - 'tel'</footer>
+</body>
+</html>

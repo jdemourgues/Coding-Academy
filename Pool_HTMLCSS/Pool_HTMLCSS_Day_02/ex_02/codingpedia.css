@@ -1,0 +1,114 @@
+/* CSS codingpedia dans ~/rendu/pool_HTMLCSS_Day02/ex_01/codingpedia.css pour projet pool_HTMLCSS_Day02 
+--------------------
+Jerome.de-mourgues@coding-academy.fr - +33 660 685 808
+--------------------
+2017-10-26 V1.0
+*/
+
+*{
+	border-width: 1px;
+	border-style: solid;
+}
+header {
+	background-color: white;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	display: inline-block;
+}
+h1 {
+	width: 50%;
+}
+nav {
+position: fixed;
+	top: 0px;
+	right: 0px;
+	width: 30%;
+}
+nav ul {
+	padding : 0px;
+	margin: 0px
+	list-style-type:none;
+}
+nav li {
+	display:inline-block;
+}
+main {
+background-color: white;
+	position: static;
+	top: 0px;
+	width: 85%;
+}
+article {
+	border-style:none;
+}
+table {
+	border-width: 1px;
+	border-style: solid;
+	border-spacing: 0px;
+}
+caption {
+	text-align: left;
+	font-size: large;
+  }
+table th {
+	border-style: none;
+	border-collapse: collapse; 
+	border-right: solid;
+	background-color: grey;
+}
+table td {
+	border-style: none;
+	border-collapse: collapse; 
+	border-right: solid;
+}
+table tr {
+	border-style:none;
+	border-collapse: collapse;
+}
+tr:nth-child(odd) {
+	background-color: lightgrey;
+}
+tr:nth-child(even){
+	background-color: white;
+}
+/* Mise en forme formulaire*/
+label {
+	display: block;
+	width: 150px;
+	float: left;
+}
+input{
+	border-width: 1px;
+	height: 20px;
+	width: 400px;
+}
+ul{
+	padding-left: 5px;
+	list-style: none;
+}
+
+ul input{
+	width: 40px;
+	margin-left: 130px;
+
+}
+#submit {
+	float: right;
+	width: 250px;
+}
+
+aside {
+	width: 15%;
+	position: fixed;
+	top: 100px;
+	right: 0px;
+}
+
+footer {
+	background-color: white;
+	position: fixed;
+	bottom: 0%;
+	width: 100%;
+	text-align: center;
+}

@@ -1,0 +1,13 @@
+<?php
+include_once("Mars.php");
+
+$rocks = new chocolate\Mars();
+$lite = new planet\Mars(100);
+$snack = new planet\Mars();
+
+echo $rocks->getId()."\n";
+echo $lite->getSize()."\n";
+echo $snack->getSize()."\n";
+$snack->setSize(50);
+echo $snack->getSize()."\n";
+?>

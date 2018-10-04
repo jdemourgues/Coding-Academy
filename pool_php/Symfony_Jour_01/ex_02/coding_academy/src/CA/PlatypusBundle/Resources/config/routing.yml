@@ -1,0 +1,3 @@
+ca_platypus_homepage:
+    path:     /
+    defaults: { _controller: CAPlatypusBundle:Default:index }

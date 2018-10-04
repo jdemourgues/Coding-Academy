@@ -1,0 +1,55 @@
+# To get started with security, check out the documentation:
+# http://symfony.com/doc/current/security.html
+security:
+
+    encoders:
+      CA\BlogBundle\Entity\User: bcrypt
+
+    role_hierarchy:
+      ROLE_BLOGGER:     [ROLE_BLOGGER]
+      ROLE_ADMIN:       [ROLE_BLOGGER, ROLE_ADMIN]
+      ROLE_SUPER_ADMIN: [ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
+
+
+    # http://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
+    providers:
+        user_db:
+            entity:
+                class: CABlogBundle:User
+                property: email
+
+    firewalls:
+        # disables authentication for assets and the profiler, adapt it according to your needs
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        main:
+            pattern:    ^/
+            anonymous:  true
+            provider:   user_db
+
+            form_login:
+              login_path:  login
+              check_path:  login_check
+
+            logout:
+              path:  logout
+              target:      /
+
+    access_control:
+        - { path: ^/post/new,       roles: ROLE_BLOGGER}
+        - { path: ^/post/.*/edit,   roles: ROLE_BLOGGER}
+        - { path: ^/post/.*/delete, roles: ROLE_ADMIN}
+        - { path: ^/user/.*/edit,   roles: ROLE_ADMIN}
+        - { path: ^/user/.*/delete, roles: ROLE_ADMIN}
+
+
+
+            # activate different ways to authenticate
+
+            # http://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
+            #http_basic: ~
+
+            # http://symfony.com/doc/current/cookbook/security/form_login_setup.html
+            #form_login: ~

@@ -1,0 +1,20 @@
+<!--
+** EPITECH PROJECT, 2017
+** 2048
+** index.html by Jerome de MOURGUES - 06.60.68.58.08
+* Created 11-22-2017 11:17
+**
+*/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/my_2048.css" />
+    <title>My_2048</title>
+</head>
+<body>
+<script src="js/jquery-3.2.1.min"></script>
+<script src="js/my_2048.js"></script>
+</body>
+</html>

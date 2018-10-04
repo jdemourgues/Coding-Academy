@@ -1,0 +1,9 @@
+<?php
+include_once ("Gecko.php");
+
+$dylan = new Gecko("Dylan");
+$dylan->eat("Vegetable");
+$dylan->eat("vegetable");
+$dylan->eat("MEAT");
+echo $dylan->getEnergy();
+?>

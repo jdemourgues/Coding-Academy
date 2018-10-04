@@ -1,0 +1,12 @@
+ca_platypus_homepage:
+    path:     /
+    defaults: { _controller: CAPlatypusBundle:Default:index }
+
+view:
+    path:     /{type}/show/{id}
+    defaults: { _controller: CAPlatypusBundle:Checker:view, id: null }
+    requirements:
+        id: '\d+'
+        type: Human|Gecko|Platypus
+
+

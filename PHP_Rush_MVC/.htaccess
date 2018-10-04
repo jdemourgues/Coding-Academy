@@ -1,0 +1,9 @@
+# Created by PhpStorm.
+# User: Margaux & jdm
+# Date: 29/11/17 Time: 20:34
+# Last Updated: 30/11/17 11:45
+
+RewriteEngine on
+RewriteBase /PHP_Rush_MVC/
+RewriteRule $ Webroot/ [L]
+RewriteRule (.*) Webroot/$1 [L]

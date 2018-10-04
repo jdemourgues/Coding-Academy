@@ -1,0 +1,9 @@
+# Created by PhpStorm.
+# User: Margaux & jdm
+# Date: 29/11/17 Time: 20:34
+# Last Updated: 30/11/17 11:45
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php [QSA,L]

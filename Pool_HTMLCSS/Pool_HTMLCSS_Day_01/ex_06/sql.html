@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <header></header>
+  	<menu>
+		<ul>
+			<li><a href="index.html">Index</a></li>
+			<li><a href="php.html">PHP</a></li>
+			<li><a href="sql.html">SQL</a></li>
+		</ul>
+	</menu>
+	<main>
+		<article>
+			<h1><abbr title="Structured Query Language">SQL</abbr></h1>
+			<abbr title="Structured Query Language">SQL</abbr> (/ˌɛs.kjuːˈɛl/ (About this sound listen) ESS-kew-EL[4] or /ˈsiːkwəl/ (About this sound listen) SEE-kwəl or /ˈskwil/ (About this sound listen) SKWEEL,[5] Structured Query Language[6][7][8][9]) is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). In comparison to older read/write APIs like ISAM or VSAM, <abbr title="Structured Query Language">SQL</abbr> offers two main advantages: First, it introduced the concept of accessing many records with one single command, and second, it eliminates the need to specify how to reach a record, e.g.: with or without an index.
+		</article>
+		<article></article>
+		<article>
+			<UL>
+			<LI>Comment 1</LI>
+			<LI>Comment 2</LI>
+			<LI>Comment 3</LI>
+			</UL>
+		</article>
+		<article>
+		Exemple:<br>
+		<code>
+			SET @temp_producer_id = <br>
+				(SELECT producer_id<br>
+				FROM movies, producers<br>
+				WHERE producers.id = movies.producer_id AND producers.name LIKE '%film'<br>
+				GROUP BY producers.id<br>
+				ORDER BY count(title) LIMIT 1)<br>
+			;<br>
+			UPDATE movies<br>
+				SET producer_id = @temp_producer_id=<br>
+				WHERE producer_id IS NULL<br>
+			;<br>
+		</code>	<br>
+		</article>
+	</main>
+  <aside>
+	<cite>
+		"Peace is a lie, there is only passion.<br>
+		Through passion, I gain strength.<br>
+		Through strength, I gain power.<br>
+		Through power, I gain victory.<br>
+		Through victory, my chains are broken.<br>
+		The Force shall free me."<br>
+	</cite>
+</aside>
+  <footer><br>'name' - 'first name' - 'address' - 'tel'</footer>
+</body>
+</html>

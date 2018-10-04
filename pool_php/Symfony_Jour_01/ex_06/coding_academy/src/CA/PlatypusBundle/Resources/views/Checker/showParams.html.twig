@@ -1,0 +1,15 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}CAPlatypusBundle:Checker:showParams{% endblock %}
+
+{% block body %}
+
+<h1>Greetings, great ShowParams</h1>
+{% for paraName, paraValue in params %}
+<table border="1" cellpadding="0" cellspacing="0">
+    <tr>
+        <td>{{paraName}}</td><td>{{paraValue}}</td><br>
+    </tr>
+</table>
+{% endfor %}
+{% endblock %}

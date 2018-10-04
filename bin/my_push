@@ -1,0 +1,20 @@
+#!/bin/bash
+mr_clean
+if [ $# -lt 1 ]
+then
+    echo "No commit message, no add and no push."
+    exit
+fi
+
+message=$1
+shift 1
+
+files=$@
+if [ $# -lt 1 ]
+then
+    files="--all"
+fi
+
+git add $files
+git commit -m $message
+git push

@@ -1,0 +1,8 @@
+<?php
+require ('ex_05.php');
+$stra = 'hello';
+$strb = 'world';
+echo $stra .' '. $strb.PHP_EOL;
+my_swap ($stra, $strb);
+echo $stra .' '. $strb.PHP_EOL;
+?>

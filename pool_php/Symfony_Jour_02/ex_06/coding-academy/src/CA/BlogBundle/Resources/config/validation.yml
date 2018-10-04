@@ -1,0 +1,8 @@
+# src/AppBundle/Resources/config/validation.yml
+CA\BlogBundle\Entity\Post:
+    properties:
+        title:
+            - Length:
+                min: 2
+                max : 100
+                maxMessage: 'Your first name cannot be longer than {{ limit }} characters'

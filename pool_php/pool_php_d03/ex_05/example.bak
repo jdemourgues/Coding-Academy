@@ -1,0 +1,7 @@
+<?php
+include_once ("Gecko.php");
+
+$dylan = new Gecko("Titi");
+$dylan->hello("brian");
+$dylan->hello(5);
+?>

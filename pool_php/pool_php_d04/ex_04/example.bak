@@ -1,0 +1,18 @@
+<?php
+include_once("Astronaut.php");
+include_once("Mars.php");
+
+$mutta = new Astronaut("Mutta");
+$hibito = new Astronaut("Hibito");
+
+$saturn = new planet\Mars();
+$bounty = new chocolate\Mars();
+$nuts = new chocolate\Mars();
+$balisto = new chocolate\Mars();
+
+$mutta->doActions($saturn);
+$mutta->doActions($bounty);
+$hibito->doActions($bounty);
+$hibito->doActions($nuts);
+$hibito->doActions($balisto);
+?>

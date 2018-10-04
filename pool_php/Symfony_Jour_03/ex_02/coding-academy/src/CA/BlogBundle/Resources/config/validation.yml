@@ -1,0 +1,23 @@
+# src/AppBundle/Resources/config/validation.yml
+CA\BlogBundle\Entity\Post:
+    properties:
+        title:
+            - Length:
+                min: 2
+                max : 100
+                maxMessage: 'Your first name cannot be longer than {{ limit }} characters'
+
+CA\BlogBundle\Entity\User:
+    properties:
+        password:
+            - Length:
+                min: 8
+                max : 50
+                maxMessage: 'Your password cannot be longer than {{ limit }} characters'
+                minMessage: 'Your password cannot be shorter than {{ limit }} characters'
+
+        confirm_password:
+            - Length:
+                min: 8
+                max : 50
+                maxMessage: 'Your first name cannot be longer than {{ limit }} characters'

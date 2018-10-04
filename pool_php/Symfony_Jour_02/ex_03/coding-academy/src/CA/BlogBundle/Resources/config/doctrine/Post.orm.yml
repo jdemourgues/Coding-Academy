@@ -1,0 +1,21 @@
+CA\BlogBundle\Entity\Post:
+    type: entity
+    table: null
+    repositoryClass: CA\BlogBundle\Repository\PostRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: '100'
+        content:
+            type: text
+        created:
+            type: datetime
+        updated:
+            type: datetime
+    lifecycleCallbacks: {  }

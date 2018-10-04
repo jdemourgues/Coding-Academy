@@ -1,0 +1,6 @@
+<?php
+require ('ex_10.php');
+require ('../ex_08/ex_08.php');
+$result = my_get_args("toto","tata","titi");
+print_array($result);
+?>

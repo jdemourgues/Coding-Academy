@@ -1,0 +1,41 @@
+.a-great-style {
+	background-color: red;
+	font-family: Impact;
+}
+
+body {
+	background-color: yellow;
+}
+
+.p1 {
+	font-size: 21;
+	background-color: black;
+	color: white;
+}
+
+.p2 {
+	font-size: 27;
+	background-color: white;
+	color: black;
+}
+
+.left-bordered-and-small {
+	float: left;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	width: 60%;
+}
+
+.right-bordered-and-small {
+	float: right;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	width: 20%;
+}
+
+.spec1 {
+	color : red;
+	font-style: italic;
+}
